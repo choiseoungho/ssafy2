@@ -1,0 +1,13 @@
+elice = int(input())
+co1 = "*" + " "*elice
+print(co1)
+co2 = " "*elice + "*"
+print(co2)
+co3 = " "*(elice//2+1) + "*"
+print(co3)
+
+if elice % 2 == 0:
+    co2 = " "* (elice-1) + "q*"
+    print(co2)
+
+print(co1*2 + "*" + "\n" + co3 + co2)

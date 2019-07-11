@@ -1,0 +1,9 @@
+input_=input()
+new=""
+for i in range(0,len(input_)):
+    #print(input_[i])
+    if input_[i]==" ":
+        new=new+" "
+    else: 
+        new=new+"°³±¼"
+print(new)

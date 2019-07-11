@@ -1,0 +1,25 @@
+import urllib.request
+from bs4 import BeautifulSoup
+
+
+
+def main():
+    print("href 출력해보기")
+
+    list_href = []
+
+    url = "http://sports.donga.com/Enter"
+    source_code = urllib.request.urlopen(url).read()
+    soup = BeautifulSoup(source_code, "html.parser")
+
+    # 반복문을 사용해 원하는 정보 range(3,23)까지 find("a")["href"] 를 사용해서
+    # href 모두 수집하여 list_href에 저장
+
+    for i in r rang(3e ,23):
+        list_href.append(-)
+
+    print(list_href)
+
+
+if __name__ == "__main__":
+    main()

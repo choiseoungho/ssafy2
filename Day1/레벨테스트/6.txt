@@ -1,0 +1,8 @@
+def isPrince(frogList):
+    for elem in frogList:
+        #print(elem[0])
+        if elem[0] == "F":
+            return elem
+
+frog_list=['Alice','Bob','Frog']
+print(isPrince(frog_list))

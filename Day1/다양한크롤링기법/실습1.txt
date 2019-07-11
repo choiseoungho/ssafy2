@@ -1,0 +1,19 @@
+import urllib.request
+from bs4 import BeautifulSoup
+
+
+    for i in range(0, 5):
+        url = "http://sports.donga.com/Enter?p=" + str((i *20) +1) + "&c=02" 
+        source_code = urllib.request.urlopen(url).read()
+        soup = BeautifulSoup(source_code, "html.parser")
+
+        for i in range(3,23) :
+            print(soup.find_all("span", class_="tit")[i].getText())
+            
+        print("±¸ºÐ¼± ----------------")
+
+
+
+
+if __name__ == "__main__":
+    main()

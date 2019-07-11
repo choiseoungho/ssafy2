@@ -1,0 +1,17 @@
+class Rectangle:
+	def __init__(self, w, h):
+		self.width = w
+		self.height = h
+		
+	def area(self):
+		return self.width * self.height
+
+class Square(Rectangle):
+	def __init__(self, s):
+		self.side = s
+        
+	def area(self):
+		return self.side * self.side
+        
+alice = Rectangle(10, 20)
+print(alice.area())

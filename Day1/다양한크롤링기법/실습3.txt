@@ -1,0 +1,32 @@
+import urllib.request
+from bs4 import BeautifulSoup
+
+
+
+def main():
+    list_href = []
+    list_content = []
+
+    list_href = []
+    list_content = []
+
+    url = "https://news.sbs.co.kr/news/newsflash.do?plink=GNB&cooper=SBSNEWS"
+    source_code = urllib.request.urlopen(url).read()
+    soup = BeautifulSoup(source_code, "html.parser")
+
+    for href in soup.find_all("div","mfn_inner"):
+        list_href.append(?)
+
+    for i in range(0, len(list_href)):
+        url = ?
+        source_code = urllib.request.urlopen(url).read()
+        soup = BeautifulSoup(source_code, "html.parser")
+
+        list_content.append(?)
+
+    print(list_href)
+    print(list_content)
+
+
+if __name__ == "__main__":
+    main()
